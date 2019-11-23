@@ -1,0 +1,20 @@
+<html>
+    <form action="{% url 'index' %}" method="POST">
+        {% csrf_token %}
+        <label for="name">Product</label>
+        <input type="text" name="name" >
+
+        <br>
+
+        <label for="description">Description</label>
+        <input type="text" name="description" id="">
+
+        <br>
+
+        <label for="price">Price</label>
+        <input type="float" name="price">
+
+        <br>
+        <input type="submit" value="Save">
+    </form>
+</html>
